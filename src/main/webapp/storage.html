@@ -1,10 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Title</title>
-</head>
-<body>
-
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Storage</title>
+        <link rel="stylesheet" href="storage.css" />
+        <script src="storage.js"></script>
+    </head>
+    <body>
+        <main>
+            <table>
+                <thead>
+                    <tr>
+                        <th id="header">Storage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="properties">
+                                <label class="name" for="name">Name: </label><input class="value" type="text" id="name" name="name" placeholder="product name">
+                            </div>
+                            <div class="properties">
+                                <label class="name" for="amount">Amount: </label><input class="value" type="number" id="amount" name="amount" min="1" placeholder="amount to restock">
+                            </div>
+                            <div class="properties">
+                                <label class="name" for="password">Password: </label><input class="value" type="password" id="password" name="password" placeholder="password">
+                            </div>
+                            <div class="warnings">
+                                <label id="name_warning">Name required!</label>
+                                <label id="amount_warning">Amount required!</label>
+                                <label id="password_warning">Password required!</label>
+                            </div>
+                            <div class="button">
+                                <button onclick="refill()">Add Products</button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </body>
 </html>

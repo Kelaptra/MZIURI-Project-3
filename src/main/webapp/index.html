@@ -1,10 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Title</title>
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Candy Shop</title>
+		<link href="styles.css" rel="stylesheet"/>
+		<script defer src="script.js"></script>
+	</head>
+	<body>
+		<main class=main>
+			<h1>Candy Shop</h1>
 
-</body>
+			<table>
+				<thead>
+				<tr class="raw">
+					<th>Products</th>
+				</tr>
+				</thead>
+				<tbody id="body">
+
+				</tbody>
+			</table>
+
+			<div id="prod_info" class="popup">
+				<h3 id="prod_name"></h3>
+				<article class="info">
+					<div class="info-object">
+						<div class="parameter">Price: </div><div id="price"></div>
+					</div>
+					<div class="info-object">
+						<div class="parameter">Available: </div><div id="available"></div>
+					</div>
+				</article>
+				<!--<article class="info">-->
+				<!--  <p class="parameter">Available: </p><p id="available">30</p>-->
+				<!--</article>-->
+				<div id="try">
+					<button id="buyer" onclick="buy()">Buy now</button>
+					<input required placeholder="0" type="number" min="0" id="integerInput" name="integerInput">
+				</div>
+				<div id="temp">
+					<button onclick="closePopup()">Close</button>
+				</div>
+			</div>
+		</main>
+	</body>
 </html>
